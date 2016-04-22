@@ -23,17 +23,18 @@ public class ViewAction implements CommandProcess {
 		int recommend = 0;
 		if (m_no != null) {
 			recommend = bd.selectRecommend(Integer.parseInt(m_no), brd_no);
+
 		}
-		
+
 		bd.updateHit(brd_no);
-		
+
 		request.setAttribute("m_no", m_no);
 		request.setAttribute("pageNum", pageNum);
 		request.setAttribute("brd_no", brd_no);
 		request.setAttribute("brd", brd);
-		System.out.println(recommend);
+		System.out.println("viewAction에 selectRecommend 햇던 값은? => " + recommend);
 		request.setAttribute("recommend", recommend);
-		
+
 		return "/meetBoard/view.jsp";
 
 	}
