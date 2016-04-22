@@ -104,7 +104,7 @@ public class J_RecommendBoardDao {
 				recommendboard.setBrd_ip(rs.getString("brd_ip"));
 				recommendboard.setBrd_reg_date(rs.getDate("brd_reg_date"));
 				recommendboard.setBrd_update_date(rs.getDate("brd_update_date"));
-				recommendboard.setBrd_dey_yn(rs.getString("brd_del_yn"));
+				recommendboard.setBrd_del_yn(rs.getString("brd_del_yn"));
 				recommendboard.setRef(rs.getInt("ref"));
 				recommendboard.setRe_step(rs.getInt("re_step"));
 				recommendboard.setRe_level(rs.getInt("re_level"));

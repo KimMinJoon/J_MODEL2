@@ -25,6 +25,7 @@
 				<td class="join1">말머리</td>
 				<td>
 				<select name="rc_code">
+					<option value="${jrb.rc_code}" selected="selected"> ${jrb.rc_value}</option>
 						<c:forEach var="jc" items="${list}">
 							<c:if test="${jc.c_major eq 'rc'}">
 								<option value="${jc.c_minor}">
